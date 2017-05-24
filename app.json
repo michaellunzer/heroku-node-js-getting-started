@@ -1,0 +1,28 @@
+{
+  "name": "heroku-node-js-getting-started",
+  "scripts": {
+  },
+  "env": {
+    "CODESHIP_ID": {
+      "required": true
+    },
+    "PAPERTRAIL_API_TOKEN": {
+      "required": true
+    },
+    "TIMES": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+    "codeship",
+    "papertrail",
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
